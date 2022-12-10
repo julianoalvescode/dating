@@ -6,11 +6,11 @@ export function Title({
   children,
   fontSize = "3.5rem",
   letterSpacing = "0.3rem",
-  textAlign = "left",
+  textAlign,
 }: I.TitleProps) {
   return (
     <Typography
-      textAlign={textAlign}
+      textAlign={textAlign ? "center" : "left"}
       fontWeight="bold"
       fontFamily="Insanibu, arial, sans-serif"
       variant="h1"
